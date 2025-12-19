@@ -6,7 +6,7 @@ Backend API for z
 
 - **Frontend**: React
 - **Backend**: FastAPI + SQLAlchemy
-- **Frontend Source**: GitHub ([Repository](https://github.com/HimaShankarReddyEguturi/Hotelbookinguidesign.git))
+- **Frontend Source**: GitHub ([Repository](https://github.com/HimaShankarReddyEguturi/Designecommerceproductui.git))
 
 ## Project Structure
 
@@ -43,25 +43,18 @@ cd backend
 
 ## Features
 
-- user registration
-- user login
-- password reset
-- resource creation
-- resource update
-- resource deletion
+- user management
+- authentication
+- authorization
 
 ## API Endpoints
 
-- `POST /api/users/register` - Register a new user
-- `POST /api/users/login` - Login an existing user
-- `POST /api/users/password_reset` - Reset a user's password
-- `GET /api/users/profile` - Get a user's profile information
-- `PUT /api/users/profile` - Update a user's profile information
-- `DELETE /api/users/profile` - Delete a user's account
-- `GET /api/resources` - Get a list of available resources
-- `GET /api/resources/{resource_id}` - Get a specific resource
-- `POST /api/resources` - Create a new resource
-- `PUT /api/resources/{resource_id}` - Update a resource
+- `POST /api/register` - Register a new user
+- `POST /api/login` - Log in a user
+- `POST /api/reset-password` - Reset a user's password
+- `GET /api/profile` - Get a user's profile information
+- `PUT /api/profile` - Update a user's profile information
+- `GET /api/users` - Get a list of all users
 
 ## License
 
