@@ -1,10 +1,39 @@
-# Backend_Api_For_Z API
+# Backend_Api_For_Z,_A_React-Based_Application._The_Api_Will_Provide_A_Restful_Interface_For_Managing_Data_And_Authenticating_Users. API
 
-Generated from Impact Analysis report.
+Generated from Impact Analysis specifications.
 
 ## Endpoints
 
-- PUT /output
+- GET /users
+- POST /users
+- GET /users/{id}
+- PUT /users/{id}
+- DELETE /users/{id}
+- GET /products
+- POST /products
+- GET /products/{id}
+- PUT /products/{id}
+- DELETE /products/{id}
+- GET /orders
+- POST /orders
+- GET /orders/{id}
+- PUT /orders/{id}
+- DELETE /orders/{id}
+- GET /payments
+- POST /payments
+- GET /payments/{id}
+- PUT /payments/{id}
+- DELETE /payments/{id}
+
+## Models
+
+- Users
+- Products
+- Orders
+- Payments
+- Data
+- Database
+- Create
 
 ## Setup
 
@@ -14,3 +43,4 @@ python main.py
 ```
 
 API runs on http://localhost:8000
+Docs available at http://localhost:8000/docs
