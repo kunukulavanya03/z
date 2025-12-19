@@ -60,48 +60,28 @@ export const logout = () => {
 };
 
 // API Endpoints
-export const api_users_register = async (data) => {
-  const response = await api.post('/api/users/register', data);
+export const api_register = async (data) => {
+  const response = await api.post('/api/register', data);
   return response.data;
 };
-export const api_users_login = async (data) => {
-  const response = await api.post('/api/users/login', data);
+export const api_login = async (data) => {
+  const response = await api.post('/api/login', data);
   return response.data;
 };
-export const api_users_password_reset = async (data) => {
-  const response = await api.post('/api/users/password_reset', data);
+export const api_reset-password = async (data) => {
+  const response = await api.post('/api/reset-password', data);
   return response.data;
 };
-export const api_users_profile = async (params = {}) => {
-  const response = await api.get('/api/users/profile', { params });
+export const api_profile = async (params = {}) => {
+  const response = await api.get('/api/profile', { params });
   return response.data;
 };
-export const api_users_profile = async (id, data) => {
-  const response = await api.put(`/api/users/profile/${id}`, data);
+export const api_profile = async (id, data) => {
+  const response = await api.put(`/api/profile/${id}`, data);
   return response.data;
 };
-export const api_users_profile = async (id) => {
-  const response = await api.delete(`/api/users/profile/${id}`);
-  return response.data;
-};
-export const api_resources = async (params = {}) => {
-  const response = await api.get('/api/resources', { params });
-  return response.data;
-};
-export const api_resources_{resource_id} = async (params = {}) => {
-  const response = await api.get('/api/resources/{resource_id}', { params });
-  return response.data;
-};
-export const api_resources = async (data) => {
-  const response = await api.post('/api/resources', data);
-  return response.data;
-};
-export const api_resources_{resource_id} = async (id, data) => {
-  const response = await api.put(`/api/resources/{resource_id}/${id}`, data);
-  return response.data;
-};
-export const api_resources_{resource_id} = async (id) => {
-  const response = await api.delete(`/api/resources/{resource_id}/${id}`);
+export const api_users = async (params = {}) => {
+  const response = await api.get('/api/users', { params });
   return response.data;
 };
 
